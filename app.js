@@ -1,24 +1,21 @@
-//Forma explicita de (ready) - Opcion 1
-    // $(document).ready(function(){
-    //     console.log("El dom esta cargado")
-    // })
+// Sintaxtis de crear elementos en el dom
 
+//$("").nombreDelMetodo("");
+// $(".mostrarImg").prepend("");
+// $(".ocultarImg").prepend("");
 
-// shortcut (es la forma corta de ready) - Opcion 2
-    // $(function(){
-    //     console.log("Ready en versión Shortcut")
-    // })
+//$(document).ready(function (){
+    // sintaxis obligatoria para confirmar que el dom esta cargado
+// })
 
-
-// arrow function -> Funcion flecha  - Opcion 3
-    // $(()=>{
-    //     console.log("Ready en versión Arrow Function")
-    // })
-
-// agregando un boton al primer #hero
-
-$(".btnAdopta").prepend('<button id="adopta">Adopta</button>')
-
-$("#adopta").click(function(){
-    alert("Usted quiere adotar un perro")
+$("document").ready(function (){
+    $('.mostrarImg').click(function () {
+        $(".pruebaAnimacion").fadeToggle();
+    });
 })
+
+$("#btnOpacity").animate({
+    left: '250px',
+    opacity: '0.4'},
+    "slow",
+)
