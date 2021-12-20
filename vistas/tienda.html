@@ -48,8 +48,18 @@
         </div>
     </nav>
 
+    <!-- Input - Clase Js-AJAX de CoderHouse -->
+    <div class="input-group mb-3">
+      <button type="button" id="renderPokemon" class="btn btn-outline-secondary">Render</button>
+      <input type="text" id="pokemonId" class="form-control" aria-label="Text input with segmented dropdown button">
+    </div>
+
+    <div id="pokedex">
+    </div>
+
+
     <!-- Tarjetas de perros adopción -->
-    <div class="container my-5">
+    <!-- <div class="container my-5">
       <h2 class="mb-3">Creando la tienda</h2>
       <div class="row">
 
@@ -71,143 +81,10 @@
               <a href="#" class="card-link"><button type="button" class="btn btn-outline-primary">Compartir</button></a>
             </div> -->
           </div>
-        </div>
-
-        <!-- <div class="col-sm-12 col-md-6 col-lg-3 my-3 p-2">
-          <div class="card">
-            <img src="../img/adoptar/perro-02.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Juana</h5>
-              <p class="card-text">Mmuy cariñosa, necesita vivir en espacios abiertos. Se lleva muy bien con otros animales.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Hembra</li>
-              <li class="list-group-item">2 años</li>
-              <li class="list-group-item">Desparacitada</li>
-            </ul>
-            <div class="card-body">
-              <a href="#" class="card-link"><button type="button" class="btn btn-outline-primary">Adoptar</button></a>
-              <a href="#" class="card-link"><button type="button" class="btn btn-outline-primary">Compartir</button></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-6 col-lg-3 my-3 p-2">
-          <div class="card">
-            <img src="../img/adoptar/perro-03.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Ringo</h5>
-              <p class="card-text">Este perro es muy mimoso, le encanta jugar en la plaza y divertirse con otros perrunos.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Macho</li>
-              <li class="list-group-item">6 años</li>
-              <li class="list-group-item">Castrado / Desparacitado</li>
-            </ul>
-            <div class="card-body">
-              <a href="#" class="card-link"><button type="button" class="btn btn-outline-primary">Adoptar</button></a>
-              <a href="#" class="card-link"><button type="button" class="btn btn-outline-primary">Compartir</button></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-6 col-lg-3 my-3 p-2">
-          <div class="card">
-            <img src="../img/adoptar/perro-04.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Gina</h5>
-              <p class="card-text">Esta perra es muy tranquila y solitaria, acostumbrada a vivir sola.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Hembra</li>
-              <li class="list-group-item">5 años</li>
-              <li class="list-group-item">Castrada / Desparacitada</li>
-            </ul>
-            <div class="card-body">
-              <a href="#" class="card-link"><button type="button" class="btn btn-outline-primary">Adoptar</button></a>
-              <a href="#" class="card-link"><button type="button" class="btn btn-outline-primary">Compartir</button></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-6 col-lg-3 my-3 p-2">
-          <div class="card">
-            <img src="../img/adoptar/perro-05.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Timi</h5>
-              <p class="card-text">El es muy tranquilo, le encanta ir a la plaza y salir a pasear, busca vivir solo.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Macho</li>
-              <li class="list-group-item">3 años</li>
-              <li class="list-group-item">Castrada / Desparacitada</li>
-            </ul>
-            <div class="card-body">
-              <a href="#" class="card-link"><button type="button" class="btn btn-outline-primary">Adoptar</button></a>
-              <a href="#" class="card-link"><button type="button" class="btn btn-outline-primary">Compartir</button></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-6 col-lg-3 my-3 p-2">
-          <div class="card">
-            <img src="../img/adoptar/perro-06.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Mau y Rick</h5>
-              <p class="card-text">Son 2 hermanos muy juguetones, muy compañeros, no puede vivir uno sin el otro.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Macho</li>
-              <li class="list-group-item">2 años</li>
-              <li class="list-group-item">Castrados / Desparacitados</li>
-            </ul>
-            <div class="card-body">
-              <a href="#" class="card-link"><button type="button" class="btn btn-outline-primary">Adoptar</button></a>
-              <a href="#" class="card-link"><button type="button" class="btn btn-outline-primary">Compartir</button></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-6 col-lg-3 my-3 p-2">
-          <div class="card">
-            <img src="../img/adoptar/perro-07.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Uma</h5>
-              <p class="card-text">Ella es super mimosa, le gusta dormir en la cama, puede vivir con mas animales.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Hembra</li>
-              <li class="list-group-item">7 años</li>
-              <li class="list-group-item">Castrada / Desparacitada</li>
-            </ul>
-            <div class="card-body">
-              <a href="#" class="card-link"><button type="button" class="btn btn-outline-primary">Adoptar</button></a>
-              <a href="#" class="card-link"><button type="button" class="btn btn-outline-primary">Compartir</button></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-6 col-lg-3 my-3 p-2">
-          <div class="card">
-            <img src="../img/adoptar/perro-08.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Roco</h5>
-              <p class="card-text">Este perro es muy tranquilo, acostumbrado a vivir con muchos perros.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Macho</li>
-              <li class="list-group-item">2 años</li>
-              <li class="list-group-item">Castrado / Desparacitado</li>
-            </ul>
-            <div class="card-body">
-              <a href="#" class="card-link"><button type="button" class="btn btn-outline-primary">Adoptar</button></a>
-              <a href="#" class="card-link"><button type="button" class="btn btn-outline-primary">Compartir</button></a>
-            </div>
-          </div>
-        </div> -->
-        
+        </div>        
       </div>
     </div>
+
 
     <!-- Footer -->
     <footer class="container d-flex flex-wrap justify-content-center py-3 my-4 border-top">
@@ -239,8 +116,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
     <!-- Java Script -->
-    <script src="../workshop.js"></script>
-    <script src="../dom.js"></script>
+    <script src="../ajax.js"></script>
+    <!-- <script src="../workshop.js"></script>
+    <script src="../dom.js"></script> -->
     <!-- <script src="../eventos.js"></script> -->
   </body>
 </html>
